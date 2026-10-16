@@ -21,8 +21,10 @@ describe('App routes', () => {
     expect(render(path)).toContain(`>${heading}</h1>`);
   });
 
-  it('トップからマイページへの仮リンクを持つ', () => {
-    expect(render('/')).toContain('href="/mypage"');
+  it('トップのログインはマイページへの仮リンクではなくボタンにする', () => {
+    const html = render('/');
+    expect(html).not.toContain('href="/mypage"');
+    expect(html).toMatch(/<button[^>]*>ログインして管理を開始/);
   });
 
   it('全画面のヘッダーにヘルプへのリンクを持つ', () => {

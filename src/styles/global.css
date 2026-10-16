@@ -86,6 +86,7 @@ button { font: inherit; }
 
 .button-primary:hover { background: color-mix(in srgb, var(--action) 85%, var(--ink)); }
 .button-primary:active { transform: translateY(1px); }
+.button-primary:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
 
 .link-secondary {
   min-height: 44px;
@@ -98,6 +99,13 @@ button { font: inherit; }
   cursor: pointer;
 }
 .link-secondary:hover { text-decoration-thickness: 2px; }
+
+.notice-error {
+  margin: 1.5rem 0 0;
+  padding-left: 0.75rem;
+  border-left: 3px solid var(--brand);
+  font-size: 0.9rem;
+}
 
 .features h2 {
   margin: 0;
