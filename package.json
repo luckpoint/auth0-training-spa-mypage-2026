@@ -1,0 +1,22 @@
+{
+  "name": "spa-mypage",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^24.0.0 || ^26.0.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --strictPort"
+  },
+  "dependencies": {
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "5.1.2",
+    "vite": "7.3.6"
+  }
+}
